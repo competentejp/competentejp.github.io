@@ -1,67 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>John Paul Competente | IT Student</title>
-  <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e184df81d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div id="header">
+    <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>John Paul Competente</span></h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.png.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A motivated BSIT student focused on UI/UX design, web development, and computer system servicing, 
+                  with a strong interest in learning new technologies and building real-world, user-centered solutions. 
+                  I enjoy transforming ideas into functional and visually appealing digital experiences through thoughtful design and clean code. 
+                  I am adaptable, detail-oriented, and eager to take on new challenges that enhance my technical and problem-solving skills. 
+                  I work well both independently and in team environments, valuing collaboration and clear communication. 
+                  My goal is to continuously grow as an IT professional while contributing to innovative and impactful projects.</p>
 
-<header>
-  <h1>John Paul B. Competente</h1>
-  <p>IT Student | Networking & IT Support</p>
-</header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#networking">Networking</a>
-  <a href="#contact">Contact</a>
-</nav>
+                  <div class="tab-titles">
+                    <p class= "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class= "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class= "tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                          <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                          <li><span>Web Development</span><br>Web app Development</li>
+                          <li><span>Wireframing & Prototyping</span><br>Planning and visualizing app interfaces</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                      <ul>
+                          <li><span>2024</span><br>UI/UX Design Intern at First Oceanic Property Management Company - Design and Development Department</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                      <ul>
+                          <li><span>2024-2026</span><br>Bachelor of Science in Information Technology (BSIT) at Pateros Technological College</li>
+                          <li><span>2022-2024</span><br>Certificate in Computer Science (CCS) at Pateros Technological College</li>
+                          <li><span>2016-2022</span><br>Junior and Senior High School - Information and Communication Technology (ICT) at Signal Village National High School</li>
+                          <li><span>2010-2016</span><br>Elementary at Goa Central School</li>
+                      </ul>
+                  </div>
+            </div>
+         </div>
+    </div>
+</div>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am an IT student with experience in web systems and UI/UX design,
-    currently focusing on networking fundamentals and IT infrastructure.
-  </p>
-</section>
+<div id="services">
+    <div class="container"> 
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+             <div>
+                 <i class="fa-solid fa-code"></i>
+                 <h2>Web Design</h2>
+                 <p>Creating visually appealing and responsive websites with a strong focus on user experience and modern UI design.</p>
+                 <a href="#">Learn more</a>
+             </div>
+             <div>
+                 <i class="fa-solid fa-crop"></i>
+                 <h2>UI/UX Design</h2>
+                 <p> Creating user-centered interface designs that focus on usability, accessibility, and smooth user experiences.</p>
+                 <a href="#">Learn more</a>
+             </div>
+             <div>
+                 <i class="fa-brands fa-connectdevelop"></i>
+                 <h2>Wireframing & Prototyping</h2>
+                 <p>Building wireframes and interactive prototypes to visualize layouts, user flows, and functionality before development.</p>
+                 <a href="#">Learn more</a>
+             </div>
+        </div>
+    </div>
+</div>
 
-<section id="projects">
-  <h2>Projects</h2>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Skills & Expertise</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>HTML, CSS & JavaScript</h3>
+                    <p> Building structured, responsive, and interactive websites using modern HTML, CSS, and JavaScript practices.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>UI/UX Principles</h3>
+                    <p> Applying user-centered design principles such as usability, accessibility, visual hierarchy, and consistency.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Figma & Prototyping Tools</h3>
+                    <p>  Creating wireframes and interactive prototypes using Figma to visualize layouts, user flows, and design ideas.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See more</a>
+    </div>
+</div>
 
-  <div class="card">
-    <h3>Quackcess</h3>
-    <p>RFID & IoT-based Gate and Monitoring System.</p>
-  </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-message"></i>competente.jp07@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09273322088</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jpcompetente07"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/dyanpoll07"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/dyan.poll/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/john-paul-competente-b842a03a8/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Competente_John Paul_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2026. All rights reserved.</p>
+    </div>
+</div>
 
-  <div class="card">
-    <h3>School Document System</h3>
-    <p>Web-based document management system.</p>
-  </div>
-</section>
 
-<section id="networking">
-  <h2>Networking Focus</h2>
-  <ul>
-    <li>OSI & TCP/IP Models</li>
-    <li>IP Addressing & Subnetting (Basic)</li>
-    <li>LAN Setup & Troubleshooting</li>
-    <li>Cisco Packet Tracer (Learning)</li>
-  </ul>
-</section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>GitHub: github.com/competentejp</p>
-</section>
 
-<footer>
-  <p>© 2026 John Paul Competente</p>
-</footer>
+<script>
 
-<script src="js/script.js"></script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu"); 
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbzipjz4FYMFyCnxvKMX28yVNEYAWLmtDDifkvjlfO-NsSfwf6mzF4jDid0X5qcarkQ/exec'
+	const form = document.getElementById('contact-form');
+    const msg =document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            alert('Failed to send message.');
+        });
+});
+
+</script>
+
 </body>
 </html>
